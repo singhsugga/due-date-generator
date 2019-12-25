@@ -1,0 +1,9 @@
+<div class="list pt-3" *ngIf="dateService.generatedDate?.length > 0">
+    <h4 style="margin-left:25px;color:white">Due Dates</h4>
+    <hr>
+    <ul>
+        <li *ngFor="let date of dateService.generatedDate">
+            {{date | date}}
+        </li>
+    </ul>
+</div>
